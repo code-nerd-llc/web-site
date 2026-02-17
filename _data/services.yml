@@ -1,0 +1,15 @@
+- title: Cloud & Azure
+  description: Azure infrastructure, CI/CD pipelines, Docker containerization. From migration planning to production deployment.
+  icon: cloud
+
+- title: .NET Development
+  description: Enterprise applications, RESTful APIs, database design. Mostly C# and the Microsoft stack, but not exclusively.
+  icon: code
+
+- title: Technical Leadership
+  description: Hands-on lead for distributed engineering teams. Architecture decisions, code review, mentoring.
+  icon: users
+
+- title: DevOps & Automation
+  description: Build and release pipelines, infrastructure as code, monitoring. Making deploys boring and reliable.
+  icon: terminal
