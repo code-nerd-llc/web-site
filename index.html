@@ -1,0 +1,75 @@
+---
+layout: default
+title: "Software Engineering Consulting"
+description: "Code Nerd LLC — cloud architecture, .NET development, and technical leadership consulting."
+---
+
+<section id="hero" class="hero">
+  <img src="{{ '/assets/images/logo-white.png' | relative_url }}"
+       alt="Code Nerd logo"
+       class="hero-logo"
+       width="468" height="371"
+       loading="eager">
+  <h1>I build software and ship it to the cloud.<br>18 years and counting.</h1>
+  <a href="#contact" class="cta-button">Let's talk</a>
+</section>
+
+<section id="about" class="about">
+  <div class="section-inner">
+    <h2>About</h2>
+    <p>I'm Viktar, a software engineer who's been writing code professionally since 2007 — mostly in the .NET / C# world, mostly for enterprises that need things to actually work at scale.</p>
+    <p>These days I split my time between hands-on development and leading engineering teams. I've led groups of up to 15 engineers across time zones, and I still prefer to stay close to the code.</p>
+    <p>My sweet spot is the intersection of cloud architecture (Azure, primarily) and backend development. I like making complex systems simpler and slow deployments faster.</p>
+    <p>Lately I've been deep in the AI/LLM space — building agentic workflows, integrating large language models into production systems, and designing evaluation pipelines to make sure they actually behave. It's the most interesting engineering problem I've worked on in years.</p>
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-number">18+</span>
+        <span class="stat-label">years in software</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">15+</span>
+        <span class="stat-label">team size led</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">.NET</span>
+        <span class="stat-label">& Azure focused</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="services">
+  <div class="section-inner">
+    <h2>Services</h2>
+    <div class="services-grid">
+      {% for service in site.data.services %}
+      <div class="service-card">
+        {% include icon.html icon=service.icon %}
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="section-inner">
+    <h2>Get in touch</h2>
+    <p>Want to work together? Reach out.</p>
+    <div class="contact-links">
+      <a href="mailto:{{ site.email }}" class="contact-link">
+        {% include icon.html icon="mail" %}
+        <span>Email</span>
+      </a>
+      <a href="https://www.linkedin.com/in/vhushchynski/" target="_blank" rel="noopener noreferrer" class="contact-link">
+        {% include icon.html icon="linkedin" %}
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer" class="contact-link">
+        {% include icon.html icon="github" %}
+        <span>GitHub</span>
+      </a>
+    </div>
+  </div>
+</section>
