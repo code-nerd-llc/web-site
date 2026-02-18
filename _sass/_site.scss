@@ -4,7 +4,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: $nav-height + 1rem;
+  scroll-padding-top: 76px; // $nav-height (60px) + 16px buffer
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -175,7 +175,7 @@ p {
   align-items: center;
   justify-content: center;
   padding: $section-padding;
-  padding-top: $nav-height + 3rem;
+  padding-top: 108px; // $nav-height (60px) + 48px buffer
   text-align: center;
 }
 
