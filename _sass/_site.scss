@@ -180,16 +180,27 @@ p {
 }
 
 .hero-logo {
-  width: 200px;
+  width: 380px;
   height: auto;
-  margin: 0 auto 2rem;
+  margin: 0 auto 2.5rem;
+
+  @media (max-width: $breakpoint-md) {
+    width: 260px;
+    margin-bottom: 2rem;
+  }
 }
 
 .hero h1 {
-  max-width: 600px;
-  margin-bottom: 2rem;
+  max-width: 720px;
+  margin-bottom: 2.5rem;
   font-weight: 400;
+  font-size: 2rem;
   color: $text-secondary;
+  text-wrap: balance;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: 1.5rem;
+  }
 }
 
 .cta-button {
@@ -214,17 +225,25 @@ p {
 .about {
   padding: $section-padding;
   background: $bg-secondary;
+  text-align: center;
 }
 
 .about .section-inner p {
   max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }
 
 .stats {
   display: flex;
+  justify-content: center;
   gap: 3rem;
   margin-top: 2.5rem;
-  flex-wrap: wrap;
+
+  @media (max-width: $breakpoint-md) {
+    gap: 2rem;
+  }
 }
 
 .stat {
