@@ -10,6 +10,10 @@
   description: Hands-on lead for distributed engineering teams. Architecture decisions, code review, mentoring.
   icon: users
 
+- title: AI & LLM Engineering
+  description: Agentic workflows, LLM integrations, evaluation pipelines. Turning language models into reliable production tools.
+  icon: brain
+
 - title: DevOps & Automation
   description: Build and release pipelines, infrastructure as code, monitoring. Making deploys boring and reliable.
   icon: terminal
